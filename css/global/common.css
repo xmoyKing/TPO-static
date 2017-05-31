@@ -456,30 +456,32 @@ footer {
 
 /**************************************************/
 /*单选题*/
-.rdos label{
+.labels label{
     display: block;
     margin: 26px 0 0 2em;
+    position: relative;
 }
 
-.rdos label>span{
-    position: relative;
-    left: -2em;
+.labels label>span{
+    position: absolute;
+    left: 1em;
 }
-.rdos label>span>input{
+.labels label>span>input{
     margin-right: .3em;
     transform: translate(0, -3px);
 }
 
-.rdos label>p{
-    position: relative;
-    top: -1em;
-}
-
-.rdos .tips{
-    font-weight: bold;
+.labels .tips{
+font-weight: bold;
     display: inline-block;
 }
 
+
+.labels.rdos label>span{
+    left: -2em;
+}
+
+/* ************   */
 .tips::after,
 .targetPara::before{
     content:'♦';
@@ -554,24 +556,17 @@ footer {
     border: 1px solid #999;
 }
 
-.tpo_08>.contentbody>.rdos{
+.tpo_08>.contentbody>.labels{
     height: calc(100% - 285px);
     overflow-y: auto;
 }
-.tpo_08>.contentbody>.rdos>label{
+.tpo_08>.contentbody>.labels>label{
     float: left;
     width: calc(50% - 10px);
     margin: 0 10px 20px 0;
     padding: 15px 30px;
     border: 1px solid #ccc;
     height: 100px;
-}
-
-.tpo_08>.contentbody>.rdos>label>span {
-    left: -1em;
-}
-.tpo_08>.contentbody>.rdos>label>p {
-    top: -2.3em;
 }
 
 /****************************************/
@@ -586,20 +581,13 @@ footer {
     color: #000;
 }
 
-.tpo_09 .rdos>label{
+.tpo_09 .labels>label{
     width: calc(100% - 30px);
     margin: 0 10px 20px 0;
     padding: 15px 30px;
     border: 1px solid #ccc;
-    height: 100px;
 }
 
-.tpo_09 .rdos>label>span {
-    left: -1em;
-}
-.tpo_09 .rdos>label>p {
-    top: -2.3em;
-}
 .tpo_09 .label-box{
     background-color: #f2f2f2;
     padding: 16px 30px;
@@ -613,9 +601,10 @@ footer {
     padding: 0;
     padding-left: 30px;
     width: 100%;
-    height: 80px;
+    line-height: 26px;
+    min-height: 54px;
 }
-.tpo_09 div.fr>.rdos>label>p {
+.tpo_09 div.fr>.labels>label>p {
     line-height: 24px;
     top: -2em;
 }
@@ -629,11 +618,11 @@ footer {
     width: 60%;
 }
 
-.tpo_13 .rdos label>p {
+.tpo_13 .labels label>p {
     top: -2.25em;
 }
 
-.tpo_13 .rdos label+label {
+.tpo_13 .labels label+label {
     margin-top: -1em;
 }
 
@@ -671,30 +660,34 @@ footer {
 .tpo_18>p:last-child{
     background-color: #ccc;
     margin: 90px 70px 0;
+    text-indent: .5em;
 }
 
-.tpo_18 .rdos>label {
-    height: 70px;
+.tpo_18 .labels>label {
+    height: auto;
     line-height: 24px;
     padding: 10px;
     margin-bottom: 10px;
 }
 .tpo_18 div.fr label {
-    height: 54px;
+    height: auto;
 }
-.tpo_18 div.fr.rdos>label{
+.tpo_18 div.fr.labels>label{
     line-height: initial;
     padding-left: 40px;
     margin-bottom: 6px;
+    position: relative;
 }
-.tpo_18 div.fr.rdos>label>span {
-    top: 1.3em;
-    left: -22px;
+.tpo_18 div.fr.labels>label>span {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    left: 20px;
 }
-.tpo_18 div.fr.rdos>label>p {
-    top: -16px;
-    height: 100%;
+.tpo_18 div.fr.labels>label>p {
+    position: initial;
+    min-height: 54px;
     line-height: 26px;
     border-left: 1px solid #ccc;
-    padding-left: 6px;
+    padding: 0 6px;
 }
