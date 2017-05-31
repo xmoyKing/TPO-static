@@ -1,0 +1,700 @@
+/* for most part or global */
+
+body{
+    font-family: 'Arial Narrow', Arial, sans-serif;
+}
+
+button:focus{
+    outline: none;
+}
+
+.pr {
+    position: relative;
+}
+
+.pa {
+    position: absolute;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.w100p{
+    width: 100%;
+}
+.w50p{
+    width: 50%;
+}
+
+.dib{
+    display: inline-block;
+}
+
+.dn{
+    display: none;
+}
+
+.m0a{
+    margin: 0 auto;
+}
+
+/* 滚动条 */
+body::-webkit-scrollbar{
+	width: 0;
+}
+.content *::-webkit-scrollbar{
+	width: 7px;
+}
+.content *::-webkit-scrollbar-thumb{   
+    margin-right: 2px;
+	background-color: #999;
+}
+/*.speak_write_10>.write-wrap>.wt-left::-webkit-scrollbar,
+.speak_write_10>.write-wrap>.wt-right>textarea::-webkit-scrollbar{
+	width: 7px;
+}
+.speak_write_10>.write-wrap>.wt-left::-webkit-scrollbar-thumb,
+.speak_write_10>.write-wrap>.wt-right>textarea::-webkit-scrollbar-thumb{   
+    margin-right: 2px;
+	background-color: #999;
+}*/
+
+
+/* header,footer, 始终保持在底部 */
+
+html,
+body,
+.wrap {
+    height: 100%;
+}
+
+body>.wrap {
+    min-width: 960px;
+    min-height: 100%;
+    height: auto;
+    background-color: #ebd6cd;
+}
+
+header {
+    min-height: 100px;
+    color: #fff;
+    font-size: 14px;
+    background-image: linear-gradient(to right, #375486, #7e313b);
+    padding: 9px 0 7px;
+    padding-right: 20px;
+}
+header .title{
+    margin-left: 7px;
+    padding-top: 4px;
+}
+header .title h2{
+    margin-top: 12px;
+}
+
+.headertop .btns>button+button{
+    margin-left: 10px;
+}
+
+.btns button, 
+.btns button i{
+    font-size: 10px;
+    color: #fff;
+}
+
+.btns button.dis, 
+.btns button.dis i{
+    background-color: #999;
+    color: #ccc;
+    cursor: auto;
+}
+
+.headerbottom {
+    margin-top: 6px;
+    line-height: 32px;
+}
+
+.headerbottom .btns button.dis, 
+.headerbottom .btns button.dis i{
+    color: #fff;
+}
+
+
+footer {
+    position: relative;
+    min-width: 960px;
+    height: 40px;
+    margin-top: -40px;
+    background-color: #365587;
+    font-size: 12px;
+    color: #fff;
+    padding-top: 6px;
+}
+
+/*  ******************** */
+
+/* speaking & reading 01 */
+
+.asymmetric-corners {
+    border-radius: 100%;
+    border: 1px solid #2b2b2b;
+    width: 73px;
+    height: 47px;
+    transform: rotate(-20deg);
+    background-color: #00417b;
+}
+.asymmetric-corners span {
+    transform: rotate(20deg);
+    display: inline-block;
+}
+
+.btns .rect-corners{
+    font-size: 12px;
+    height: 32px;
+    width: 142px;
+    background-color: #74010b;
+    border: 0px;
+    border-radius: 3px;
+    margin-left: 7px;
+    float: left;
+}
+
+.btns .rect-corners i{
+    font-size: 14px;
+}
+
+.icon-exit{
+    transform: rotate(180deg);
+}
+
+.headerbottom>.progress{
+    left: 50%;    
+}
+
+.headerbottom .hidetime{
+    width: 91px;
+    height: 22px;
+    margin: 5px 16px;
+}
+
+.headerbottom .time{
+    line-height: 32px;
+}
+
+.headerbottom .volume{
+    background-color: #ccc;
+    width:  142px;
+    display: inline-block;
+    border-radius: 3px;
+}
+
+.headerbottom .volume>div{
+    position: relative;
+    border-radius: 3px;
+    /*cursor: pointer;*/
+}
+.headerbottom .volume>div:after{
+    position: absolute;
+    right: -5px;
+    top: -5px;
+    content: ' ';
+    display: block;
+    background-color: #fff;
+    border-radius: 50%;
+    height: 14px;
+    width: 14px; 
+    cursor: pointer;
+}
+
+.btns .rect-in-header {
+    height: 46px;
+    width: 142px;
+    font-size: 14px;
+    background-color: #00417b;
+}
+.btns .rect-corners.tworow{
+    font-size: 12px;
+    text-align: left;
+    padding-left: 3em;
+}
+.btns .rect-corners.tworow i{
+    top: -.5em;
+}
+
+
+.content{
+    /*display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;*/
+    font-size: 18px;
+    line-height: 32px;
+    /*margin-top: 70px;*/
+}
+
+.speak_write_09>.contentbody{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    color: #666;
+    width: 460px;
+    height: 312px;
+    border: 1px solid #000;
+    background: #f1e7ca;
+    padding: 35px;
+}
+
+.content .progress{
+    margin-top: 70px;
+    width: 295px;
+    border: 8px solid #ccc;
+    outline: 1px solid #000;
+    background-color: #000;
+}
+.headerbottom .volume>div,
+.content .progress>div{
+    position: relative;
+    height: 5px;
+    background-color: #00ffff;
+}
+
+/* listening */
+.wrap.bgf {
+    background-color: #fff;
+}
+
+.speak_write_02 {
+    width: 72%;
+    margin: 0 auto;
+}
+
+.speak_write_02>h3{
+    margin-bottom: 45px;
+    font-weight: bold;
+}
+
+.speak_write_02>div{
+    border-radius: 4px;
+    border: 2px solid #00417b;
+    padding: 35px 40px;
+    color: #00417b;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 65px;
+    width: 390px;
+}
+
+.speak_write_04_06 {
+    font-size: 14px;
+    width: 62.5%;
+    margin: 0 auto;
+}
+.speak_write_04_06>p{
+    padding: 26px 34px;
+    border-bottom: 1px solid #000;
+    margin-bottom: 26px;
+}
+.speak_write_04_06 .speakinfo{
+    width: 200px;
+    margin: 0 auto;
+    line-height: 20px;
+}
+
+.speak_write_04_06 .speakinfo .timer{
+    border: 1px solid #000;
+    margin: 26px auto;
+}
+.speak_write_04_06 .speakinfo .timer>p{
+    line-height: 30px;
+}
+.speak_write_04_06 .speakinfo .timer>p:first-child{
+    font-weight: bold;
+    color: #fff;
+    background-color: #000;
+}
+.speak_write_04_06 .speakinfo .rect-corners{
+    height: 46px;
+    width: 142px;
+    font-size: 14px;
+    background-color: #00417b;
+    border: 0px;
+    border-radius: 3px;
+    margin: 0 auto;
+    color: #fff;
+}
+.speak_write_04_06 .speakinfo .rect-corners>i{
+    position: relative;
+    top: 2px;
+}
+
+.speak_write_07 {
+    font-size: 14px;
+}
+
+.speak_write_10{
+    margin-top: 0; 
+    line-height: 20px;
+}
+.speak_write_10>.dirction{
+    padding-top: 26px;
+    border: 1px solid #000;
+    border-right: 0;
+    border-left: 0; 
+}
+.speak_write_10>p{
+    padding: 10px;
+}
+.speak_write_10>.write-wrap{
+    border-top: 2px solid #000;
+    height: calc(100% - 120px);
+}
+.speak_write_10>.write-wrap:first-child{
+    border-top: 0;
+    height: 100%;
+}
+.speak_write_10>.write-wrap>.wt-left{
+    border-right: 2px solid #000;
+    padding: 2% 5%;
+    height: 100%;
+    overflow-y: auto;
+}
+.speak_write_10>.write-wrap>.wt-right{
+    height: 100%;
+}
+
+.speak_write_10>.write-wrap>.wt-left>h3{
+    font-weight: bold;
+    margin-bottom: 26px;
+}
+
+.speak_write_10>.write-wrap>.wt-right>.tips{
+    height: 60px;
+    line-height: 60px;
+    background-color: #999;
+}
+
+.speak_write_10>.write-wrap>.wt-right>textarea{
+    height: calc(100% - 60px);
+    resize: none;
+}
+
+/* *************************************** */
+
+.tpo_06{
+    padding-top: 8.5%;
+}
+
+.tpo_06>.contentbody{
+    width: 82.5%;
+    height: 83%;
+    font-size: 14px;
+    color: #666;
+    background-color: #f2f2f2;
+}
+
+.tpo_06>.contentbody>.head{
+    font-size: 40px;
+    line-height: 110px;
+    border-bottom: 1px solid #ccc;
+}
+
+
+.tpo_06>.contentbody .tpo7list>div{
+    text-align: center;
+}
+
+.tpo_06>.contentbody .tpo7list>div:first-child{
+    width: 66%;
+}
+.tpo_06>.contentbody .tpo7list>div:last-child{
+    width: 34%;
+    text-align: center;
+}
+
+.tpo_06>.contentbody>ul{
+    overflow-y: auto;
+    padding: 0 30px;
+    height: calc(100% - 110px);
+}
+
+.tpo_06>.contentbody>ul>li{
+    height: 118px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #ccc;
+    padding: 30px 0;
+}
+
+.tpo_06>.contentbody li.tpo7list>div:first-child>div:first-child{
+    line-height: 58px;
+    width: 50px;
+}
+.tpo_06>.contentbody li.tpo7list>div:first-child>div:last-child{
+    line-height: 26px;
+    width: calc(100% - 50px);
+}
+
+.tpo_06>.contentbody li.tpo7list>div:first-child{
+    text-align: left;
+}
+
+/**************************************************/
+/*单选题*/
+.rdos label{
+    display: block;
+    margin: 26px 0 0 2em;
+}
+
+.rdos label>span{
+    position: relative;
+    left: -2em;
+}
+.rdos label>span>input{
+    margin-right: .3em;
+    transform: translate(0, -3px);
+}
+
+.rdos label>p{
+    position: relative;
+    top: -1em;
+}
+
+.rdos .tips{
+    font-weight: bold;
+    display: inline-block;
+}
+
+.tips::after,
+.targetPara::before{
+    content:'♦';
+    display: block;
+    position: absolute;
+    left: -1em;
+    top: 0;
+}
+
+.tips::after{
+    content:'♦';
+    display: block;
+    position: absolute;
+    left: initial;
+    right: -1em;
+    top: 0;
+}
+
+/**************************************/
+
+.tpo_07 .targetwords{
+    background-color: #ccc;
+    color: #000;
+    font-weight: bold;
+}
+.tpo_07>.write-wrap>.wt-left{
+    padding-top: 5%;
+    background-color: #f2f2f2;
+}
+
+.tpo_07 .wt-right{
+    border-right: 2px solid #000;
+    padding: 2% 5%;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.tpo_07 .wt-right>h3{
+    font-weight: bold;
+    margin-bottom: 26px;
+}
+
+/****************************************************/
+.tpo_08{
+    padding-top: 3%;
+}
+.tpo_08>.contentbody{
+    width: 82.5%;
+    font-size: 14px;
+    height: 97%;
+    background-color: transparent;
+}
+.tpo_08>.contentbody>p{
+    margin: 20px 0 10px;
+    font-size: 18px;
+    color: #000;
+}
+
+.tpo_08 .chosen{
+    background-color: #f2f2f2;
+    padding: 10px;
+}
+.tpo_08 .chosen>p{
+    margin-bottom: 15px;
+}
+.tpo_08 .chosen>input{
+    margin: 12px auto;
+    display: block;
+    width: 65%;
+    height: 50px;
+    border-radius: 4px;
+    border: 1px solid #999;
+}
+
+.tpo_08>.contentbody>.rdos{
+    height: calc(100% - 285px);
+    overflow-y: auto;
+}
+.tpo_08>.contentbody>.rdos>label{
+    float: left;
+    width: calc(50% - 10px);
+    margin: 0 10px 20px 0;
+    padding: 15px 30px;
+    border: 1px solid #ccc;
+    height: 100px;
+}
+
+.tpo_08>.contentbody>.rdos>label>span {
+    left: -1em;
+}
+.tpo_08>.contentbody>.rdos>label>p {
+    top: -2.3em;
+}
+
+/****************************************/
+.tpo_09{
+    padding: 3% 7% 0;
+    overflow-y: auto;
+    font-size: 14px;
+}
+
+.tpo_09 p.titleTips{
+    font-size: 18px;
+    color: #000;
+}
+
+.tpo_09 .rdos>label{
+    width: calc(100% - 30px);
+    margin: 0 10px 20px 0;
+    padding: 15px 30px;
+    border: 1px solid #ccc;
+    height: 100px;
+}
+
+.tpo_09 .rdos>label>span {
+    left: -1em;
+}
+.tpo_09 .rdos>label>p {
+    top: -2.3em;
+}
+.tpo_09 .label-box{
+    background-color: #f2f2f2;
+    padding: 16px 30px;
+}
+
+.tpo_09 .label-box+.label-box{
+    margin-top: 20px;
+}
+
+.tpo_09 div.fr label{
+    padding: 0;
+    padding-left: 30px;
+    width: 100%;
+    height: 80px;
+}
+.tpo_09 div.fr>.rdos>label>p {
+    line-height: 24px;
+    top: -2em;
+}
+
+/********************************/
+.tpo_13{
+    padding: 7% 0;
+    font-size: 14px;
+}
+.tpo_13>.contentbody{
+    width: 60%;
+}
+
+.tpo_13 .rdos label>p {
+    top: -2.25em;
+}
+
+.tpo_13 .rdos label+label {
+    margin-top: -1em;
+}
+
+/**********************************/
+
+.tpo_17{
+    padding-top: 3%;
+    font-size: 14px;
+}
+.tpo_17>.contentbody{
+    width: 82.5%;
+}
+
+.tpo_17>.contentbody>.table-wrap{
+    width: 92.5%;
+}
+.tpo_17>.contentbody>.table-wrap>p{
+    background-color: #ccc;
+    margin: 55px 0 60px;
+    color: #000;
+    text-indent: 1em;
+}
+.tpo_17>.contentbody>.table-wrap td{
+    height: 65px;
+    width: 20%;
+    border: 1px solid #ccc;
+}
+
+/******************************************/
+
+.tpo_18>p:first-child{
+    line-height: 20px;
+    margin-bottom: 20px
+}
+.tpo_18>p:last-child{
+    background-color: #ccc;
+    margin: 90px 70px 0;
+}
+
+.tpo_18 .rdos>label {
+    height: 70px;
+    line-height: 24px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.tpo_18 div.fr label {
+    height: 54px;
+}
+.tpo_18 div.fr.rdos>label{
+    line-height: initial;
+    padding-left: 40px;
+    margin-bottom: 6px;
+}
+.tpo_18 div.fr.rdos>label>span {
+    top: 1.3em;
+    left: -22px;
+}
+.tpo_18 div.fr.rdos>label>p {
+    top: -16px;
+    height: 100%;
+    line-height: 26px;
+    border-left: 1px solid #ccc;
+    padding-left: 6px;
+}
