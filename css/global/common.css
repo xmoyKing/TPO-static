@@ -305,17 +305,18 @@ font-weight: bold;
 /**************************************************/
 /* 主体特殊样式 */
 
-.speak_write_02 {
+/* 原 speak_write_02 更名为 largeTexts， 表示页面内为大段文字 */
+.largeTexts {
     width: 72%;
     margin: 0 auto;
 }
 
-.speak_write_02>h3{
+.largeTexts>h3{
     margin-bottom: 45px;
     font-weight: bold;
 }
 
-.speak_write_02>div{
+.largeTexts>div{
     border-radius: 4px;
     border: 2px solid #00417b;
     padding: 35px 40px;
@@ -326,35 +327,38 @@ font-weight: bold;
     width: 390px;
 }
 
-.speak_write_04_06 {
+/* 原 speak_write_04_06 样式，更名为speaking_record，即：说-录音 界面 */
+
+.speaking_record {
     font-size: 14px;
     width: 62.5%;
     margin: 0 auto;
+    padding-top: 70px;
 }
-.speak_write_04_06>p{
+.speaking_record>p{
     padding: 26px 34px;
     border-bottom: 1px solid #000;
     margin-bottom: 26px;
 }
-.speak_write_04_06 .speakinfo{
+.speaking_record .speakinfo{
     width: 200px;
     margin: 0 auto;
     line-height: 20px;
 }
 
-.speak_write_04_06 .speakinfo .timer{
+.speaking_record .speakinfo .timer{
     border: 1px solid #000;
     margin: 26px auto;
 }
-.speak_write_04_06 .speakinfo .timer>p{
+.speaking_record .speakinfo .timer>p{
     line-height: 30px;
 }
-.speak_write_04_06 .speakinfo .timer>p:first-child{
+.speaking_record .speakinfo .timer>p:first-child{
     font-weight: bold;
     color: #fff;
     background-color: #000;
 }
-.speak_write_04_06 .speakinfo .rect-corners{
+.speaking_record .speakinfo .rect-corners{
     height: 46px;
     width: 142px;
     font-size: 14px;
@@ -364,16 +368,20 @@ font-weight: bold;
     margin: 0 auto;
     color: #fff;
 }
-.speak_write_04_06 .speakinfo .rect-corners>i{
+.speaking_record .speakinfo .rect-corners>i{
     position: relative;
     top: 2px;
 }
+/**/
 
-.speak_write_07 {
+/* 原 speak_write_07 样式， 更名为 speaking_readingAudio ，即说-阅读题目同时听录音*/
+.speaking_readingAudio {
     font-size: 14px;
 }
+/**/
 
-.speak_write_09>.contentbody{
+/* 原 speak_write_09 更名为 onlyTextBox, 表示页面仅有一个带框文本段 */
+.onlyTextBox>.contentbody{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -385,56 +393,59 @@ font-weight: bold;
     background: #f1e7ca;
     padding: 35px;
 }
+/**/
 
-.speak_write_10{
+/* 原 speak_write_10 更名为 writing_response ，即 写作-编辑框*/
+.writing_response{
     margin-top: 0; 
     line-height: 20px;
 }
-.speak_write_10>.dirction{
+.writing_response>.dirction{
     padding-top: 26px;
     border: 1px solid #000;
     border-right: 0;
     border-left: 0; 
 }
-.speak_write_10>p{
+.writing_response>p{
     padding: 10px;
 }
-.speak_write_10>.write-wrap{
+.writing_response>.write-wrap{
     border-top: 2px solid #000;
     height: calc(100% - 120px);
 }
-.speak_write_10>.write-wrap:first-child{
+.writing_response>.write-wrap:first-child{
     border-top: 0;
     height: 100%;
 }
-.speak_write_10>.write-wrap>.wt-left{
+.writing_response>.write-wrap>.wt-left{
     border-right: 2px solid #000;
     padding: 2% 5%;
     height: 100%;
     overflow-y: auto;
 }
-.speak_write_10>.write-wrap>.wt-right{
+.writing_response>.write-wrap>.wt-right{
     height: 100%;
 }
 
-.speak_write_10>.write-wrap>.wt-left>h3{
+.writing_response>.write-wrap>.wt-left>h3{
     font-weight: bold;
     margin-bottom: 26px;
 }
 
-.speak_write_10>.write-wrap>.wt-right>.tips{
+.writing_response>.write-wrap>.wt-right>.tips{
     height: 60px;
     line-height: 60px;
     background-color: #999;
 }
 
-.speak_write_10>.write-wrap>.wt-right>textarea{
+.writing_response>.write-wrap>.wt-right>textarea{
     height: calc(100% - 60px);
     resize: none;
 }
+/**/
 
-/* *************************************** */
 
+/* 暂时不确定这个页面的作用 */
 .tpo_06{
     padding-top: 8.5%;
 }
@@ -491,56 +502,57 @@ font-weight: bold;
 .tpo_06>.contentbody li.tpo7list>div:first-child{
     text-align: left;
 }
+/**/
 
+/* 原 tpo_07 更名为 reading_rdo ，即：阅读-单选题 */
 
-/**************************************/
-
-.tpo_07 .targetwords{
+.reading_rdo .targetwords{
     background-color: #ccc;
     color: #000;
     font-weight: bold;
 }
-.tpo_07>.write-wrap>.wt-left{
+.reading_rdo>.write-wrap>.wt-left{
     padding-top: 5%;
     background-color: #f2f2f2;
 }
 
-.tpo_07 .wt-right{
+.reading_rdo .wt-right{
     border-right: 2px solid #000;
     padding: 2% 5%;
     height: 100%;
     overflow-y: auto;
 }
 
-.tpo_07 .wt-right>h3{
+.reading_rdo .wt-right>h3{
     font-weight: bold;
     margin-bottom: 26px;
 }
+/**/
 
-/****************************************************/
-.tpo_08{
+/* 原 tpo_08 更名为 reading_completeSummary ，即：阅读-6选3归纳段意， */
+.reading_completeSummary{
     padding-top: 3%;
 }
-.tpo_08>.contentbody{
+.reading_completeSummary>.contentbody{
     width: 82.5%;
     font-size: 14px;
     height: 97%;
     background-color: transparent;
 }
-.tpo_08>.contentbody>p{
+.reading_completeSummary>.contentbody>p{
     margin: 20px 0 10px;
     font-size: 18px;
     color: #000;
 }
 
-.tpo_08 .chosen{
+.reading_completeSummary .chosen{
     background-color: #f2f2f2;
     padding: 10px;
 }
-.tpo_08 .chosen>p{
+.reading_completeSummary .chosen>p{
     margin-bottom: 15px;
 }
-.tpo_08 .chosen>input{
+.reading_completeSummary .chosen>input{
     margin: 12px auto;
     display: block;
     width: 65%;
@@ -549,76 +561,78 @@ font-weight: bold;
     border: 1px solid #999;
 }
 
-.tpo_08>.contentbody>.labels{
+.reading_completeSummary>.contentbody>.labels{
     height: calc(100% - 285px);
     overflow-y: auto;
 }
-.tpo_08>.contentbody>.labels>label{
+.reading_completeSummary>.contentbody>.labels>label{
     float: left;
     width: calc(50% - 10px);
     margin: 0 10px 20px 0;
     padding: 15px 30px;
     border: 1px solid #ccc;
 }
+/**/
 
-/****************************************/
-.tpo_09{
+
+/* 原 tpo_09 更名为 reading_correctPhrases ，即：阅读-7选5正确短语题 */
+.reading_correctPhrases{
     padding: 3% 7% 0;
     overflow-y: auto;
     font-size: 14px;
 }
 
-.tpo_09 p.titleTips{
+.reading_correctPhrases p.titleTips{
     font-size: 18px;
     color: #000;
 }
 
-.tpo_09 .labels>label{
+.reading_correctPhrases .labels>label{
     width: calc(100% - 30px);
     margin: 0 10px 20px 0;
     padding: 15px 30px;
     border: 1px solid #ccc;
 }
 
-.tpo_09 .label-box{
+.reading_correctPhrases .label-box{
     background-color: #f2f2f2;
     padding: 16px 30px;
 }
 
-.tpo_09 .label-box+.label-box{
+.reading_correctPhrases .label-box+.label-box{
     margin-top: 20px;
 }
 
-.tpo_09 div.fr label{
+.reading_correctPhrases div.fr label{
     padding: 0;
     padding-left: 30px;
     width: 100%;
     line-height: 26px;
     min-height: 54px;
 }
-.tpo_09 div.fr>.labels>label>p {
+.reading_correctPhrases div.fr>.labels>label>p {
     line-height: 24px;
     top: -2em;
 }
+/**/
 
 /********************************/
-.tpo_13{
+/* 原 tpo_13 更名为 listening_choose ， 即：听力-选择题 */
+.listening_choose{
     padding: 7% 0;
     font-size: 14px;
 }
-.tpo_13>.contentbody{
+.listening_choose>.contentbody{
     width: 60%;
 }
 
-.tpo_13 .labels label>p {
+.listening_choose .labels label>p {
     top: -2.25em;
 }
-
-.tpo_13 .labels label+label {
-    margin-top: -1em;
-}
+/**/
 
 /**********************************/
+/* 暂时不确定这个页面的作用 */
 
 .tpo_17{
     padding-top: 3%;
@@ -643,7 +657,8 @@ font-weight: bold;
     border: 1px solid #ccc;
 }
 
-/******************************************/
+/***********************************/
+/* 暂时不确定这个页面的作用 */
 
 .tpo_18>p:first-child{
     line-height: 20px;
